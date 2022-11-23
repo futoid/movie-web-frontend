@@ -21,8 +21,8 @@ const Home = () => {
         <div className="movies">
           {movies?.map((movie) => {
             return (
-              <Link /*'movies/tt1201607'*/
-                to={`movies/${movie.imdbID}`} /* Router.js dinamik path yapısıyla aynı olacak şekilde imdbID ile routing işlemini yapınız */
+              <Link 
+                to={`movies/${movie.imdbID}`}
                 className="text-link"
                 key={movie.imdbID}
               >
@@ -40,8 +40,8 @@ const Home = () => {
         </div>
       ) : (
         <div className="search-warning">
-          <p>Search a movie!</p>
-          <p>i.e. Harry Potter</p>
+          <p>Find movie</p>
+          <p></p>
         </div>
       )}
     </div>

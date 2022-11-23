@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   font-weight: bold;
   padding-bottom: 30px;
-  border-bottom: 1px solid #eeee;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.933);
 }
 
 .logo {
@@ -11,7 +11,7 @@ nav {
   align-items: center;
   padding: 10px;
   border: none;
-  color: white;
+  color: #000dff;
   font-size: 28px;
 }
 
@@ -24,7 +24,6 @@ nav {
 li,
 :link {
   display: inline-block;
-  
 }
 
 ul {
@@ -36,16 +35,15 @@ ul {
   text-decoration: none;
   padding: 10px 5px;
   background-color: black;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #fff;
   transition: all ease-in-out 0.3s;
 }
 
 .link:hover {
-  background-color: white;
-  color: black;
+  color: rgb(84, 84, 84);
 }
 
 li:not(:last-child) :link {
-  margin-right: 25px;
+  margin-right: 50px;
 }

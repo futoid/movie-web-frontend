@@ -10,7 +10,7 @@ const Detail = () => {
   let { id } = useParams();
   const { showDetail, selectedMovie } = useContext(MovieContext);
   useEffect(() => {
-    showDetail(id); // useParams ile alınan film id'sini kullanınız.
+    showDetail(id);
   }, []);
 
   return (
@@ -65,7 +65,7 @@ const Detail = () => {
         </div>
         <div className="field">
           <div className="label">
-          Language(s): <p className="label-p">{selectedMovie.Language}</p>
+            Language(s): <p className="label-p">{selectedMovie.Language}</p>
           </div>
         </div>
       </div>

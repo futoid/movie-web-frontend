@@ -4,19 +4,15 @@ export const MovieContext = createContext();
 
 const API_KEY = '44a627e9'; // OMDb API Key
 
+//88093597s
+
 const MovieApp = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
   const [movies, setMovies] = useState();
   const [search, setSearch] = useState('');
   const [selectedMovie, setSelectedMovie] = useState('');
 
-  const fetchMovies = async (searchValue) => {
-    const response = await axios(
-      `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchValue}`
-    );
-    const data = response.data;
-    setMovies(data.Search);
-  };
+
 
   const removeFavoriteMovie = (movie) => {
     movie.isFavorite = false;
@@ -50,6 +46,14 @@ const MovieApp = ({ children }) => {
   };
 
   useEffect(() => {
+    
+    const fetchMovies = async (searchValue) => {
+      const response = await axios(
+        `https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchValue}`
+      );
+      const data = response.data;
+      setMovies(data.Search);
+    };
     console.log(API_KEY)
     fetchMovies(search);
   }, [search]);
