@@ -1,6 +1,6 @@
 # Movie Search App
 
-This project is a React application with functions to search for movies and add movies to favorites using OMDb API.
+This project is a React application with functions to search for movies and add movies to favorites using [OMDb API](https://www.omdbapi.com/).
 
 # Home Page
 
@@ -24,8 +24,11 @@ This project is a React application with functions to search for movies and add 
 # Project setup
 
 ### `npm install`
+This will download all the dependencies required to run application in your localhost. 
 
 
 # Project start
 
-### `npm run start`
+### `npm start`
+Run this command on terminal 
+open `localhost:3000` in web browser to see website
